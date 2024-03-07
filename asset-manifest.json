@@ -1,14 +1,13 @@
 {
   "files": {
-    "main.css": "/public_busan/static/css/main.19d3c08f.css",
-    "main.js": "/public_busan/static/js/main.9a7af9ec.js",
-    "static/media/logo.jpg": "/public_busan/static/media/logo.dcce5c93b7b5cef7350f.jpg",
+    "main.css": "/public_busan/static/css/main.cba51f80.css",
+    "main.js": "/public_busan/static/js/main.ed6d78b9.js",
     "index.html": "/public_busan/index.html",
-    "main.19d3c08f.css.map": "/public_busan/static/css/main.19d3c08f.css.map",
-    "main.9a7af9ec.js.map": "/public_busan/static/js/main.9a7af9ec.js.map"
+    "main.cba51f80.css.map": "/public_busan/static/css/main.cba51f80.css.map",
+    "main.ed6d78b9.js.map": "/public_busan/static/js/main.ed6d78b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.19d3c08f.css",
-    "static/js/main.9a7af9ec.js"
+    "static/css/main.cba51f80.css",
+    "static/js/main.ed6d78b9.js"
   ]
 }
