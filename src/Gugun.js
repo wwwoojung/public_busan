@@ -53,16 +53,20 @@ const Gugun = ({ data }) => {
 
     return (
         <>
-            <h2>{gugun} 맛집</h2>
+            <div className="default_title">
+                <h2>{gugun} 맛집</h2>
+            </div>
             <ul className="default_list">
                 {
                     guData.map((it, idx) => {
                         return (
                             <li>
-                                <Link to={`/${it.TITLE}`}>
-                                    {idx + 1}
+                                <Link to={`/${it.MAIN_TITLE}`}>
                                     <img src={it.MAIN_IMG_NORMAL} alt="" />
-                                    {it.TITLE}
+                                    <strong>{it.MAIN_TITLE}</strong>
+                                    <div className="default_button">
+                                        자세히 보기
+                                    </div>
                                 </Link>
                             </li>
                         )

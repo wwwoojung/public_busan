@@ -49,14 +49,20 @@ const AllList = ({ data }) => {
     }, [data])
     return (
         <>
+            <div className="default_title">
+                <h2>부산의 모든 맛집을 한 눈에</h2>
+            </div>
             <ul className="default_list">
                 {
                     data.map((it, idx) => {
                         return (
                             <li>
-                                <Link to={`/${it.TITLE}`}>
+                                <Link to={`/${it.MAIN_TITLE}`}>
                                     <img src={it.MAIN_IMG_NORMAL} alt="" />
-                                    {it.TITLE}
+                                    <strong>{it.MAIN_TITLE}</strong>
+                                    <div className="default_button">
+                                        자세히 보기
+                                    </div>
                                 </Link>
                             </li>
                         )

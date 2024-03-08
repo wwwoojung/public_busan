@@ -32,9 +32,10 @@
     z-index: 999;
     max-width: 1600px;
     margin: -80px auto 80px auto;
-    padding: 40px;
+    padding: 40px 80px;
 
     display: flex;
+    align-items: center;
     gap: 60px;
 
     background: rgba($color: #ffffff, $alpha: 0.75);
@@ -69,13 +70,6 @@
 
     .search {
         flex: 1;
-
-        h2 {
-            font-size: 28px;
-            font-weight: 700;
-            margin: 0 0 8px 0;
-            white-space: nowrap;
-        }
 
         p {
             line-height: 20px;
@@ -116,4 +110,8 @@
             }
         }
     }
+}
+
+.search_result>p {
+    margin: 0 0 16px 0;
 }
