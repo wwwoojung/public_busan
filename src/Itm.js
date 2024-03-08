@@ -37,27 +37,32 @@ const Itm = ({ data }) => {
             {
                 dataItm &&
                 <>
-                    <div className="inner">
-                        <img src={dataItm?.MAIN_IMG_NORMAL} alt="" />
-                        {dataItm?.MAIN_TITLE} / {itm}
-
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <th>위치</th>
-                                    <td>{dataItm.ADDR1}</td>
-                                </tr>
-                                <tr>
-                                    <th>연락처</th>
-                                    <td><a href={`tel:${dataItm.CNTCT_TEL}`}>{dataItm.CNTCT_TEL}</a></td>
-                                </tr>
-                                <tr>
-                                    <th>설명</th>
-                                    <td>{dataItm.ITEMCNTNTS}</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    <section className="default_section itm_list">
+                        <div className="default_title">
+                            <h2>{dataItm?.MAIN_TITLE}</h2>
+                        </div>
+                        <div className="inner specific_itm">
+                            <figure>
+                                <img src={dataItm?.MAIN_IMG_NORMAL} alt="" />
+                            </figure>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>위치</th>
+                                        <td>{dataItm.ADDR1}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>연락처</th>
+                                        <td><a href={`tel:${dataItm.CNTCT_TEL}`}>{dataItm.CNTCT_TEL}</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th>설명</th>
+                                        <td>{dataItm.ITEMCNTNTS}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
                 </>
             }
         </>

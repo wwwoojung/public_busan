@@ -31,7 +31,7 @@
     position: relative;
     z-index: 999;
     max-width: 1600px;
-    margin: -80px auto 80px auto;
+    margin: -80px auto 0 auto;
     padding: 40px 80px;
 
     display: flex;
@@ -114,4 +114,19 @@
 
 .search_result>p {
     margin: 0 0 16px 0;
+}
+
+
+.itm_list .specific_itm {
+    display: flex;
+    gap: 60px;
+
+    &>* {
+        flex: 1;
+    }
+
+    table th {
+        text-align: left;
+        white-space: nowrap;
+    }
 }

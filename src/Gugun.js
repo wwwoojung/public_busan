@@ -53,26 +53,28 @@ const Gugun = ({ data }) => {
 
     return (
         <>
-            <div className="default_title">
-                <h2>{gugun} 맛집</h2>
-            </div>
-            <ul className="default_list">
-                {
-                    guData.map((it, idx) => {
-                        return (
-                            <li>
-                                <Link to={`/${it.MAIN_TITLE}`}>
-                                    <img src={it.MAIN_IMG_NORMAL} alt="" />
-                                    <strong>{it.MAIN_TITLE}</strong>
-                                    <div className="default_button">
-                                        자세히 보기
-                                    </div>
-                                </Link>
-                            </li>
-                        )
-                    })
-                }
-            </ul>
+            <section className="default_section">
+                <div className="default_title">
+                    <h2>{gugun} 맛집</h2>
+                </div>
+                <ul className="default_list">
+                    {
+                        guData.map((it, idx) => {
+                            return (
+                                <li>
+                                    <Link to={`/${it.MAIN_TITLE}`}>
+                                        <img src={it.MAIN_IMG_NORMAL} alt="" />
+                                        <strong>{it.MAIN_TITLE}</strong>
+                                        <div className="default_button">
+                                            자세히 보기
+                                        </div>
+                                    </Link>
+                                </li>
+                            )
+                        })
+                    }
+                </ul>
+            </section>
         </>
     )
 }
