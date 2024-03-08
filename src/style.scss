@@ -1,0 +1,119 @@
+.kakaoMap {
+    height: 500px;
+}
+
+#Header {
+
+    padding: 40px 16px 24px 16px;
+    margin: 0 auto 32px auto;
+    text-align: center;
+
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+        margin: 0 0 16px 0;
+
+        &::after {
+            content: "";
+            display: block;
+            margin: 12px auto 0 auto;
+            width: 60px;
+            height: 2px;
+
+
+            background: #0d6efd;
+
+        }
+    }
+}
+
+.search_box {
+    position: relative;
+    z-index: 999;
+    max-width: 1600px;
+    margin: -80px auto 80px auto;
+    padding: 40px;
+
+    display: flex;
+    gap: 60px;
+
+    background: rgba($color: #ffffff, $alpha: 0.75);
+    border-radius: 16px;
+    border: 1px solid rgba($color: #202123, $alpha: 0.1);
+    box-shadow: 2px 2px 10px rgba($color: #202123, $alpha: 0.1);
+
+    .gnb {
+        flex: 2;
+
+        >ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 4px;
+
+            li {
+                flex: 0 0 150px;
+            }
+
+            li a {
+                display: block;
+                padding: 12px 24px;
+                background: #cfe2ff;
+                border-radius: 8px;
+
+                font-weight: 500;
+                text-align: center;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .search {
+        flex: 1;
+
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            white-space: nowrap;
+        }
+
+        p {
+            line-height: 20px;
+            margin: 0 0 24px 0;
+            word-break: keep-all;
+        }
+
+        form {
+            display: inline-block;
+            border: 2px solid #0d6efd;
+            border-radius: 12px;
+            overflow: hidden;
+            padding: 8px;
+
+            input {
+                min-width: 250px;
+                border: none;
+                outline: none;
+
+                padding: 16px;
+
+                font-size: 16px;
+
+                &[type="text"]:focus::placeholder {
+                    color: transparent;
+                }
+            }
+
+            button {
+                padding: 16px;
+                border: none;
+                background: transparent;
+
+                font-size: 16px;
+                border-left: 1px solid rgba($color: #202123, $alpha: 0.1);
+
+                cursor: pointer;
+            }
+        }
+    }
+}
