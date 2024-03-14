@@ -79,10 +79,12 @@
 
         form {
             display: inline-block;
+            background: #ffffff;
             border: 2px solid #0d6efd;
             border-radius: 12px;
             overflow: hidden;
             padding: 8px;
+            white-space: nowrap;
 
             input {
                 min-width: 250px;
@@ -116,6 +118,25 @@
     margin: 0 0 16px 0;
 }
 
+@media (max-width:1000px) {
+    .search_box {
+        flex-direction: column;
+        gap: 30px;
+
+        .gnb {
+            width: 100%;
+        }
+
+        .search {
+            text-align: center;
+
+            .title {
+                text-align: center;
+            }
+        }
+    }
+}
+
 
 .itm_list .specific_itm {
     display: flex;
@@ -125,8 +146,50 @@
         flex: 1;
     }
 
-    table th {
-        text-align: left;
+    figure {
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    table {
+        th {
+            padding: 8px 16px;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        td {
+            padding: 8px 16px;
+            word-break: keep-all;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .itm_list .specific_itm {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+#Footer {
+    text-align: center;
+    padding: 40px 0 60px 0;
+    background: #f6f6f6;
+    color: #202123;
+
+    address {
+        margin: 0 0 16px 0;
+
+        text-decoration: none;
+        font-style: normal;
         white-space: nowrap;
+    }
+
+    p {
+        line-height: 20px;
+        word-break: keep-all;
     }
 }

@@ -32,9 +32,6 @@ const Search = () => {
                     <input type="text" onChange={inputHandler} placeholder="맛집 키워드를 검색해보세요" />
                     <button>search</button>
                 </form>
-                {/* <div className="r">
-                    {search}
-                </div> */}
             </div>
         </>
     )

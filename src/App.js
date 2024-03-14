@@ -12,6 +12,7 @@ import './style.scss';
 import Search from "./Search";
 import SearchResult from "./SearchResult";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const App = () => {
     const [data, setData] = useState([]);
@@ -35,7 +36,9 @@ const App = () => {
     return (
         <div>
             <Header />
+
             <div id="map" style={{ height: '500px', margin: '0 0 0 0' }}></div>
+
             <div className="search_box">
                 <Search />
                 <nav className="gnb">
@@ -57,6 +60,8 @@ const App = () => {
                 <Route path="/gu/:gugun" element={<Gugun data={data} />} />
                 <Route path="/:itm" element={<Itm data={data} />} />
             </Routes>
+
+            <Footer />
         </div>
     )
 }
